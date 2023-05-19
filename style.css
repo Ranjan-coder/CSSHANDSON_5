@@ -70,7 +70,6 @@ a{
     width: 190px;
     border-radius: 10px;
     align-items: center;
-    background-color: cyan;
     color: aliceblue;
 }
 .child_item:hover{
