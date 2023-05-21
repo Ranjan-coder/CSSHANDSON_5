@@ -1,196 +1,299 @@
-body{
+body {
     background-image: url(./shara\ desert.jpg);
+    background-position: center;
+    background-size: cover;
 }
-a{
+
+a {
     text-decoration: none;
 }
-#logo{
-    height: 49px;
-    width: 49px;
+
+.nav_menue {
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
 }
-#imgposition{
-    margin-top: 20px;
-    margin-left: 50px;
-    height: 30px;
-    width: 100px;
-}
-.nav{
-    color: aliceblue;
-}
-#link_space{
-    width: 500px;
-    float: right;
+
+.nav_bar {
+    height: 12%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.menuimage{
-    top: 2px;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-}
-#main_content{
-    margin: 100px 150px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    justify-content: space-between;
-}
-    #main_heading{
-    font-size: 60px;
-    color: aliceblue;
-}
-#main_heading_content{
-    color: aliceblue;
-    font-size: 20px;
-}
-#button{
-    height: 50px;
-    width: 200px;
-    border: 2px solid white;
-    border-radius: 20px;
-}
-#button:hover{
-    background-color: aqua;
-}
-#container{
-    width: 400px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 100px;
-    left: 800px;
-    gap: 20px;
-}
-.child_item{
-    height: 210px;
-    width: 190px;
-    border-radius: 10px;
     align-items: center;
+}
+
+#logo {
+    width: 50px;
+}
+
+.menuimage {
+    width: 30px;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    font-size: 13px;
     color: aliceblue;
 }
-.child_item:hover{
+
+#parentcontainer {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.child {
+    flex-basis: 50%;
+}
+
+h1 {
+    font-size: 52px;
+    color: aliceblue;
+}
+
+p {
+    font-size: 100%;
+    line-height: 15px;
+    color: aliceblue;
+}
+
+button {
+    width: 180px;
+    font-size: 12px;
+    padding: 12px 0px;
+    background-color: white;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.child_item {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+.child_item:hover {
     transition: all 0.5s;
     transform: translateY(-10px);
 }
-.ch_1{
+
+.ch_1 {
     background-image: url(./pic-1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.ch_2{
+
+.ch_2 {
     background-image: url(./pic-2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.ch_3{
+
+.ch_3 {
     background-image: url(./pic-3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.ch_4{
+
+.ch_4 {
     background-image: url(./pic-4.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.ch_p_h{
-    font-size: 18px;
-    padding-left: 10px;
+
+h5 {
+    color: aliceblue;
 }
-.ch_p_h_2{
-    padding-left: 15px;
+
+.child_item p {
+    color: aliceblue;
 }
 
 /* _______________MEDIA QUERY_______________ */
 
-@media  only screen and (max-width: 667px) and (min-width: 200px)
-{
-    #link_space{
-        width: 253px;
-        float: right;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    #main_heading {
-        font-size: 35px;
-        color: aliceblue;
-        margin-top: 35px;
-    }
-    #main_content {
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        width: 324px;
-        justify-content: space-between;
-        margin-left: 20px;
-        align-items: center;
-    }
-    #main_heading_content{
-        align-items: center;
-    }
-    #container{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: 10px 10px;
-        gap: 20px;
-    }
-    .child_item{
-        height: 200px;
-        width: 290px;
-        border-radius: 10px;
-        align-items: center;
-        color: aliceblue;
+@media only screen and (max-width: 667px) and (min-width: 200px) {
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 25px;
     }
 
+    nav {
+        position: absolute;
+    }
+
+    .nav_menue {
+        display: inline-block;
+    }
+
+    .menuimage {
+        position: absolute;
+        left: 269px;
+        top: 18px;
+    }
+
+    h5 {
+        font-size: 100%;
+    }
+
+    h1 {
+        font-size: 100%;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    p {
+        font-size: 100%;
+        line-height: 15px;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    button {
+        width: 180px;
+        font-size: 12px;
+        padding: 12px 0px;
+        background-color: white;
+        border-radius: 20px;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    #parentcontainer {
+        display: flex;
+        height: 88%;
+        align-items: center;
+        padding-left: 8%;
+    }
+
+    .child {
+        flex-basis: 100%;
+    }
+
+    .child_item {
+        width: 200px;
+        height: 230px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .p_c_1 {
+        width: 276px;
+        height: 174px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        margin: auto;
+    }
+
+    .p_c_2 {
+        width: 365px;
+        height: 174px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        margin: auto;
+    }
+
+    .child_item:hover {
+        transition: all 0.5s;
+        transform: translateY(-10px);
+    }
 }
-@media  only screen and (max-width: 830px) and (min-width: 667px)
-{
-    #link_space{
-        width: 253px;
-        float: right;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    #main_heading {
-        font-size: 32px;
-        color: aliceblue;
-        margin-top: 35px;
-    }
-    #main_content {
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        width: 324px;
-        justify-content: space-between;
-        margin-left: 20px;
-        align-items: center;
-    }
-    #main_heading_content{
-        align-items: center;
-        font-size: 18px;
-    }
-    #container{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: 10px 10px;
-        gap: 20px;
-    }
-    .child_item{
-        height: 200px;
-        width: 290px;
-        border-radius: 10px;
-        align-items: center;
-        color: aliceblue;
+
+@media only screen and (max-width: 830px) and (min-width: 667px) {
+    h5 {
+        font-size: 100%;
     }
 
+    h1 {
+        font-size: 100%;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    p {
+        font-size: 100%;
+        line-height: 15px;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    button {
+        width: 180px;
+        font-size: 12px;
+        padding: 12px 0px;
+        background-color: white;
+        border-radius: 20px;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    #parentcontainer {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .child{
+        flex-basis: 0%;
+    }
+    .child_item {
+        width: 190px;
+        height: 150px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 10px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .p_c_1 {
+        width: 276px;
+        height: 174px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .p_c_2 {
+        width: 505px;
+        height: 184px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+    }
+
+    .child_item:hover {
+        transition: all 0.5s;
+        transform: translateY(-10px);
+    }
 }
