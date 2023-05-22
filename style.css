@@ -157,7 +157,7 @@ h5 {
         font-size: 100%;
         line-height: 15px;
         color: aliceblue;
-        text-align: center;
+        /* text-align: center; */
     }
 
     button {
@@ -171,8 +171,8 @@ h5 {
     }
 
     #parentcontainer {
-        display: flex;
-        height: 88%;
+        display: inline-block;
+        height: 100%;
         align-items: center;
         padding-left: 8%;
     }
@@ -182,8 +182,8 @@ h5 {
     }
 
     .child_item {
-        width: 200px;
-        height: 230px;
+        width: 235px;
+        height: 196px;
         display: inline-block;
         border-radius: 10px;
         padding: 15px 25px;
@@ -202,18 +202,18 @@ h5 {
         cursor: pointer;
         background-position: center;
         background-size: cover;
-        margin: auto;
+        /* margin: auto; */
     }
 
     .p_c_2 {
-        width: 365px;
+        width: 230px;
         height: 174px;
         border-radius: 10px;
         box-sizing: border-box;
         cursor: pointer;
         background-position: center;
         background-size: cover;
-        margin: auto;
+        /* margin: auto; */
     }
 
     .child_item:hover {
@@ -228,7 +228,7 @@ h5 {
     }
 
     h1 {
-        font-size: 100%;
+        font-size: 35px;
         color: aliceblue;
         text-align: center;
     }
@@ -251,22 +251,25 @@ h5 {
     }
 
     #parentcontainer {
-        display: flex;
+        display: inline-block;
+        height: 100%;
         align-items: center;
-        flex-wrap: wrap;
+        padding-left: 8%;
     }
 
-    .child{
-        flex-basis: 0%;
+    .child {
+        flex-basis: 100%;
     }
+
     .child_item {
-        width: 190px;
-        height: 150px;
+        width: 235px;
+        height: 196px;
         display: inline-block;
         border-radius: 10px;
-        padding: 10px;
+        padding: 15px 25px;
         box-sizing: border-box;
-        margin: 10px;
+        cursor: pointer;
+        margin: 10px 15px;
         background-position: center;
         background-size: cover;
     }
@@ -279,17 +282,18 @@ h5 {
         cursor: pointer;
         background-position: center;
         background-size: cover;
+        /* margin: auto; */
     }
 
     .p_c_2 {
-        width: 505px;
-        height: 184px;
+        width: 230px;
+        height: 174px;
         border-radius: 10px;
         box-sizing: border-box;
         cursor: pointer;
         background-position: center;
         background-size: cover;
-        display: flex;
+        /* margin: auto; */
     }
 
     .child_item:hover {
